@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Rock Paper scissors</title>
+ <link rel="stylesheet"  href="10-rock-paper-scissors.css"></link>
+ 
+
+</head>
+
+<body>
+  <p class="title" >
+    Rock Paper Scissors
+      </p>
+
+  <div class="div">
+    <div>
+      <!-- 2 ways to make a button works , onclick or addeventlistener -->
+      <!-- <button onclick="      
+            playGame('Rock');
+
+          " class="rock-button js-rock-button"> -->
+          <button class="rock-button js-rock-button">
+        <img src="icons/rock-emoji.png" class="move-icon" >
+        </button>
+
+    </div>
+    
+  <div>
+          <!-- <button  onclick="
+          playGame('Paper');
+
+        "class="paper-button"> -->
+        <button class="paper-button js-paper-button">
+    <img src="icons/paper-emoji.png" class="move-icon" >
+      </button>
+  </div>
+   
+  <div>
+          <!-- <button onclick=" 
+          playGame('Scissors');
+        
+      "class="scissors-button"> -->
+      <button class="scissors-button js-scissors-button">
+   <img src="icons/scissors-emoji.png" class="move-icon" >
+     </button>
+
+
+  </div>
+
+</div>
+
+
+  <p class="js-result result"></p>
+
+
+<div>
+  <p class="js-moves"></p>
+
+</div>
+
+
+  <p class="js-score score"></p>
+
+
+
+
+  <button onclick=" 
+   score.wins=0;
+   score.losses=0;
+   score.ties=0;
+   
+   localStorage.removeItem('score');
+   updateScoreElement();
+  " class="reset-buttton">Reset score</button>
+  
+   <button onclick=" 
+   autoPlay();
+   " class="auto-play-button">Auto Play</button>
+
+  <script src="10-rock-paper-scissors.js"></script>
+</body>
+</html>
+
+
+
+
+

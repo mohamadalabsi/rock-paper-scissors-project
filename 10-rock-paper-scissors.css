@@ -1,0 +1,43 @@
+.div{
+  display: grid;
+  grid-template-columns: 134px 135px 134px ;
+  margin-bottom: 50px;
+}
+ body{
+  font-family: arial;
+  background-color: rgb(24, 23, 23);
+  color: white;
+}
+.title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.rock-button , .paper-button , .scissors-button{
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  background-color: black;
+  color: white;
+  border: solid;
+  border-color:white ;
+  cursor: pointer;
+  /* margin-right: 9px;   with grid u dont need it */
+}
+.move-icon{
+  width: 50px;
+}
+.result{
+font-size: 25px;
+font-weight: bold;
+}
+
+.score{
+margin-top: 60px;
+}
+.reset-buttton ,.auto-play-button{
+padding: 8px 15px;
+font-size: 16px;
+background-color: white;
+border: none ;
+cursor: pointer;
+}
